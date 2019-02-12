@@ -5,7 +5,7 @@ CMD ["/sbin/my_init"]
 
 #setup nginx service
 RUN mkdir /etc/service/nginx
-COPY nginx.sh /etc/service/nginx/RUN
+COPY services/nginx.sh /etc/service/nginx/RUN
 RUN chmod +x /etc/service/nginx/run
 
 #install programs
