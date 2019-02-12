@@ -7,6 +7,7 @@ RUN apt-get update && \
         php-fpm \
         php-mysql \
         curl \
+        gpg \
      && apt-get clean \
      && rm -rf /var/lib/apt/lists/*
 
