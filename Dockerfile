@@ -10,8 +10,7 @@ RUN apt-get update && \
         php-fpm \
         php-mysql \
         curl \
-        gpg \
-     && apt-get clean
+        gpg 
 
 RUN curl -s https://install.zerotier.com/ -o installzt.sh && \
         chmod +x installzt.sh && \
