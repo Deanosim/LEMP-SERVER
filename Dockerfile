@@ -18,7 +18,6 @@ RUN curl -s https://install.zerotier.com/ -o installzt.sh && \
         bash installzt.sh && \
         rm installzt.sh
 
-
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 80
