@@ -10,7 +10,9 @@ RUN apt-get update && \
      && apt-get clean \
      && rm -rf /var/lib/apt/lists/*
 
-RUN curl -s https://install.zerotier.com/ | sudo bash
+RUN curl -s https://install.zerotier.com/ -o installzt.sh && \
+        chmod +x installzt.sh && \
+        bash installzt.sh 
 
 EXPOSE 80
 EXPOSE 443
