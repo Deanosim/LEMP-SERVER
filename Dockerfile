@@ -6,7 +6,7 @@ CMD ["/sbin/my_init"]
 RUN apt-get update && \
         DEBIAN_FRONTEND=noninteractive apt-get install -y \
         nginx \
-        mysql-server \
+        mariadb \
         php-fpm \
         php-mysql \
         curl \
