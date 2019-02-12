@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
-RUN apt update && \
-        DEBIAN_FRONTEND=noninteractive apt install -y \
+RUN apt-get update && \
+        DEBIAN_FRONTEND=noninteractive apt-get install -y \
         nginx \
         mysql-server \
         php-fpm \
